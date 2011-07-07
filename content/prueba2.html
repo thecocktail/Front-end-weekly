@@ -1,0 +1,49 @@
+--- 
+title: Esto es una prueba
+issue: 1
+date: 24 April 2007
+---
+
+<tr>
+	<%= render 'partials/modules/mod_text',:text =>'Esto es una prueba para el Señor Javier Sanchez Marin' %>
+</tr>
+<tr>
+	<%= render 'partials/modules/mod_title',:title =>'HTML'%>
+</tr>
+<tr>
+	<td align="center">
+		<%= render 'partials/modules/mod_article_image_medium',:image =>'item_medium.jpg', :title =>'Javier es un SEÑOR', :link =>'http://marca.com',:text=>'Texto1'%>
+	</td>
+
+</tr>
+<tr>
+	<td class="separata" align="center">
+		<img src="images/separata.jpg" width="561" height="53" alt=""/>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+		<%= render 'partials/modules/mod_article_image_small',:image =>'item_small.jpg', :title =>'Iván es un SEÑOR', :link =>'http://as.com',:text=>'Texto2'%>
+	</td>
+</tr>
+<tr>
+	<td class="separata" align="center">
+		<img src="images/separata.jpg" width="561" height="53" alt=""/>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+		<%= render 'partials/modules/mod_article_image_large',:image =>'item_large.jpg', :title =>'Natalí es una SEÑORITA', :link =>'http://elpais.com',:text=>'Texto3'%>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+		<%= render 'partials/modules/mod_article_text', :title =>'dale candela', :link =>'http://prueba.com',:text=>'Textosdfdsfds'%>
+	</td>
+</tr>
+
+<tr>
+	<td align="center">
+		<%=render 'partials/modules/mod_article_link',:link =>'http://as.com',:title =>'dale'%>
+	</td>
+</tr>
