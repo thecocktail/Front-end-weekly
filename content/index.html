@@ -9,7 +9,7 @@ title: Índice
 		<% dup_items = @items.dup.reject{|i| i.path == "/"} %>
 		<% dup_items.sort{|a,b| Date.strptime(b[:date],"%d %B %Y") <=> Date.strptime(a[:date],"%d %B %Y")  }.each do |item| %>
   	    <li style="padding-bottom: 0.7em">
-  	      <p><%= item[:date]%> - <a title="título del link" href=".<%= item.path %>"><%= item[:title].nil? ? item.path : item[:title] %> - Número <%= item[:issue]%></a></p>
+  	      <p><%= item[:date]%> - <a href=".<%= item.path %>"><%= item[:title].nil? ? 'Front-end Weekly' : item[:title] %> - Número <%= item[:issue]%></a></p>
   	    </li>
     <% end %>
     <%# rescue

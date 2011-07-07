@@ -1,0 +1,97 @@
+--- 
+issue: 1
+date: 9 June 2011
+---
+
+
+<%= render 'partials/modules/mod_text', :text =>'Bienvenidos!' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'MOST DISCUSSED' %>
+
+<%= render 'partials/modules/mod_article_image_medium', 
+  :image => 'item_medium.jpg', 
+  :title => 'Take Responsive Design Beyond the (Fluid) Grid', 
+  :link => 'http://www.webmonkey.com/2011/06/good-responsive-design-goes-beyond-fluid-grids/', 
+  :text => 'Cuando hablamos de Responsive Design, el tamaño de la pantalla es solo el punto de partida. Hay que tener en cuenta, interfaces táctiles, features del dispositivo (geoposicionamiento), transiciones...  Cada sitio es diferente y hay que darle al usuario lo que quiere en cada momento.' %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'CSS' %>
+  
+  
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'CSS Vocabulary', 
+  :link => 'http://nimbupani.com/css-vocabulary.html', 
+  :text => 'Un repaso al vocabulario general utilizado en CSS, una gran ayuda para quienes empiezan con los estilos pero se pierden con los términos.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Why “Reset” Style Sheets Are Bad', 
+  :link => 'http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/', 
+  :text => 'Para hacer que el contenido presente la misma apariencia base (margin, padding, border...) en todos los navegadores, es bastante común utilizar hojas de estilo conocidas como "reset". En este articulo nos cuentan porque no molan.' %>
+  
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Distibute elements evenly using CSS (Equally distributed elements)', 
+  :link => 'http://my.opera.com/SublimeYe/blog/2010/07/21/distribute-elements-evenly-using-css-equally-distributed-elements', 
+  :text => 'Una manera Cross-browser de dar una separación uniforme a elementos HTML.' %>
+  
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Better float containment in IE using CSS expressions', 
+  :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
+  :text => 'Explicación de las diferentes opciones para que los bloques que contienen elementos flotantes sigan el flujo de la estructura. Orientado a los diferentes errores que surgen en Internet Explorer.' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Pseudo spriting', 
+  :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
+  :text => 'Alternativas para el uso de Sprites sin necesidad de incluir marcado extra. Como apunte decir que de manera nativa, la pseudo-clase :before no funciona en IE7, pero se puede conseguir incluyendo un ' + link('.js externo', 'http://ie7-js.googlecode.com/svn/test/before.html') + '.' %>
+
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', :title => 'HTML5' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Styling HTML5 Elements: An Irresponsible Choice... Right now', 
+  :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
+  :text => 'Si aplicamos estilo a elementos propios de HTML5, es imprescindible que el usuario tenga javascript activado en IE6,7,8  para poder visualizarlo. Si no es así, el HTML se renderizará totalmente plano y sin estilo. FAIL!' + link('How many users have javascript disabled?', 'http://developer.yahoo.com/blogs/ydn/posts/2010/10/how-many-users-have-javascript-disabled/') + '.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'What Potential Impact Can HTML5 Have on SEO?', 
+  :link => 'http://sixrevisions.com/content-strategy/what-potential-impact-can-html5-have-on-seo/',
+  :text => 'Como sabéis, HTML5 incorporá una variedad de etiquetas nuevas que ayudan a dar semantíca al contenido. Aquí nos cuentan el impacto que tienen en SEO.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'An aside really isn’t a sidebar', 
+  :link => 'http://leonpaternoster.com/2010/03/an-aside-really-isnt-a-sidebar/',
+  :text => 'Un sidebar no siempre es un &lt;aside&gt;. Mira el por qué.' %>
+
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'VISUAL PLAYGROUND' %>
+
+
+<%= render 'partials/modules/mod_text', 
+  :text =>'Vi vi vi... Vi-su-al!',
+  :padding => '10px 20px 0' %>
+  
+<%= render 'partials/modules/mod_text',
+  :text => link('dasdasda', 'dadasda', true) + 
+           link('dasdasda', 'dadasda', true) + 
+           link('dasdasda', 'dadasda', true) + 
+           link('dasdasda', 'dadasda', true) + 
+           link('dasdasda', 'dadasda', true) + 
+           link('dasdasda', 'dadasda', true),
+  :padding => '10px 20px 30px'
+%>
+
+<%= render 'partials/modules/mod_separata' %>
+
+
+
+

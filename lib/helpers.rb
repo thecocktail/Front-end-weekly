@@ -26,3 +26,7 @@ def select_years_options
     output << %~<option value="#{initial_year = initial_year + 1}">#{initial_year}</option>~
   end
 end
+
+def link text, href, br = false
+  %~ <a href="#{href}" style="color:#338AC4; line-height:24px;">#{text}</a> #{"<br />" if br }~
+end
