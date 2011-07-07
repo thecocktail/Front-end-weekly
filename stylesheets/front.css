@@ -1,0 +1,70 @@
+/**
+* # Common elements
+*--------------------------------------------------------------------------*/
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: x-small;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  color:#666666;
+}
+.wrapper {
+	width:600px;
+	margin:0 auto;
+}
+#header,
+#footer {
+	background-color: #338AC4;
+	background-color: #338AC4;
+	font-size: 14px;
+	color: #fff;
+	text-shadow:1px 1px 1px #1C4E70;
+}
+#header {
+	padding-bottom:20px;
+}
+#footer {
+	padding:24px 0
+}
+#footer a {
+	color:#fff;
+}
+#footer p {
+	text-align:center;
+}
+#content {
+	margin:50px 0;
+}
+#content .wrapper {
+	width:600px;
+}
+#content h1 {
+	background-color: #338AC4;
+	font-size: 14px;
+	padding: 8px 20px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow:1px 1px 1px #1C4E70;
+	margin-bottom:12px;
+}
+#content ul {
+	list-style:none;
+	font-size:14px;
+}
+#content ul li {
+	padding:8px 20px;
+	color:#666666;
+}
+#content ul li a {
+	color:#338AC4;
+	margin-left:4px;
+}
+
