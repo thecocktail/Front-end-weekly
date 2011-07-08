@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>Front-end Weekly &raquo; <%= @item[:title] %> &raquo; Número <%= @item[:issue] %></title>
+	<title>Front-end Weekly &raquo; <%= @item[:title] ? @item[:title] + '&raquo;' : '' %> Número <%= @item[:issue] %></title>
 	<!-- style type="text/css" media="screen">
 		body {
 			margin:0;
