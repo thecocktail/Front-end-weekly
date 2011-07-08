@@ -10,7 +10,7 @@ date: 9 June 2011
   :title => 'MOST DISCUSSED' %>
 
 <%= render 'partials/modules/mod_article_image_medium', 
-  :image => 'item_medium.jpg', 
+  :image => 'responsive.jpg',
   :title => 'Take Responsive Design Beyond the (Fluid) Grid', 
   :link => 'http://www.webmonkey.com/2011/06/good-responsive-design-goes-beyond-fluid-grids/', 
   :text => 'Cuando hablamos de Responsive Design, el tamaño de la pantalla es solo el punto de partida. Hay que tener en cuenta, interfaces táctiles, features del dispositivo (geoposicionamiento), transiciones...  Cada sitio es diferente y hay que darle al usuario lo que quiere en cada momento.' %>
@@ -73,25 +73,71 @@ date: 9 June 2011
 <%= render 'partials/modules/mod_separata' %>
 
 <%= render 'partials/modules/mod_title', 
-  :title => 'VISUAL PLAYGROUND' %>
+  :title => 'JS' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Internet Explorer, Transparent PNGs, and jQuery Animation: The Black Background Issue Solved', 
+  :link => 'http://www.viget.com/inspire/jquery-ie-png-24-ie-black-background-issue-solved/',
+  :text => 'Como solucionar el bug con los PNGs transparentes animados en IE7 y 8.' %>
 
-
-<%= render 'partials/modules/mod_text', 
-  :text =>'Vi vi vi... Vi-su-al!',
-  :padding => '10px 20px 0' %>
+<%=render 'partials/modules/mod_article_link', 
+  :link => 'https://github.com/jed/140bytes/wiki/Byte-saving-techniques', 
+  :title => 'Javascript Byte-saving Techniques' %>
   
 <%= render 'partials/modules/mod_text',
-  :text => link('dasdasda', 'dadasda', true) + 
-           link('dasdasda', 'dadasda', true) + 
-           link('dasdasda', 'dadasda', true) + 
-           link('dasdasda', 'dadasda', true) + 
-           link('dasdasda', 'dadasda', true) + 
-           link('dasdasda', 'dadasda', true),
+  :text => '<strong>JS PLUGINS</strong> <br />' +
+           link('Vegas Background', 'http://vegas.jaysalvat.com/', true) + 
+           link('Grid Navigation Effects', 'http://tympanus.net/Development/GridNavigationEffects/example5.html', true) + 
+           link('Nivo Slider', 'http://nivo.dev7studios.com/', true) + 
+           link('CamanJS', 'http://camanjs.com/', true),
   :padding => '10px 20px 30px'
 %>
 
 <%= render 'partials/modules/mod_separata' %>
 
+
+
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'VISUAL PLAYGROUND' %>
+
+
+<%#= render 'partials/modules/mod_text', 
+  :text => 'Vi vi vi... Vi-su-al!',
+  :padding => '10px 20px 0' %>
+  
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'lab.jpg',
+  :text => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. <br /><br />' +
+           link('http://matthewlein.com/experiments/', false, true) + 
+           link('http://playground.deaxon.com/', false, true) + 
+           link('http://css3watch.com/', false, true) + 
+           link('http://www.zurb.com/playground', false, true) +
+           link('http://houseofbuttons.tumblr.com/', false, true),
+  :padding => '10px 20px 30px'
+%>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'INTERESTING' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Channel 4, Web Style Guide', 
+  :link => 'http://halmatferello.com/lab/channel4/styleguide/',
+  :text => 'La guia de estilo web de Channel 4. ' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'HTML5 Video Player Comparison', 
+  :link => 'http://praegnanz.de/html5video/',
+  :text => 'Comparativa Reproductores de video opensource en HTML5.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Google Chart Tools / Image Charts (aka Chart API)', 
+  :link => 'http://code.google.com/intl/es-ES/apis/chart/image/docs/gallery/chart_gall.html',
+  :text => 'API para generar gráficas estáticas. En '+ link('http://redes-sociales.the-cocktail.com')  +' podéis ver un ejemplo de las “Pie charts”.' %>
+  
+<%= render 'partials/modules/mod_separata' %>
 
 
 
