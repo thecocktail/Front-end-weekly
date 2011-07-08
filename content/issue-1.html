@@ -1,6 +1,6 @@
 --- 
 issue: 1
-date: 9 June 2011
+date: 8 July 2011
 ---
 
 
@@ -25,12 +25,12 @@ date: 9 June 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'CSS Vocabulary', 
   :link => 'http://nimbupani.com/css-vocabulary.html', 
-  :text => 'Un repaso al vocabulario general utilizado en CSS, una gran ayuda para quienes empiezan con los estilos pero se pierden con los términos.' %>
+  :text => 'Un repaso al vocabulario general utilizado en CSS. Una gran ayuda para quienes empiezan con los estilos, pero se pierden con los términos.' %>
   
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Why “Reset” Style Sheets Are Bad', 
   :link => 'http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/', 
-  :text => 'Para hacer que el contenido presente la misma apariencia base (margin, padding, border...) en todos los navegadores, es bastante común utilizar hojas de estilo conocidas como "reset". En este articulo nos cuentan porque no molan.' %>
+  :text => 'Para hacer que el contenido presente la misma apariencia base (margin, padding, border...) en todos los navegadores, es bastante común utilizar hojas de estilo conocidas como "reset". En este artículo nos cuentan por qué no molan.' %>
   
   
 <%= render 'partials/modules/mod_article_text', 
@@ -42,12 +42,12 @@ date: 9 June 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Better float containment in IE using CSS expressions', 
   :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
-  :text => 'Explicación de las diferentes opciones para que los bloques que contienen elementos flotantes sigan el flujo de la estructura. Orientado a los diferentes errores que surgen en Internet Explorer.' %>
+  :text => 'Diferentes opciones para que los contenedores de elementos flotantes sigan el flujo de la estructura. Orientado a errores que surgen en Internet Explorer.' %>
 
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Pseudo spriting', 
   :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
-  :text => 'Alternativas para el uso de Sprites sin necesidad de incluir marcado extra. Como apunte decir que de manera nativa, la pseudo-clase :before no funciona en IE7, pero se puede conseguir incluyendo un ' + link('.js externo', 'http://ie7-js.googlecode.com/svn/test/before.html') + '.' %>
+  :text => 'Alternativas para el uso de Sprites sin necesidad de incluir marcado extra. Como apunte decir que de manera nativa, la pseudo-clase :before no funciona en IE7, pero se puede conseguir incluyendo un ' + link('http://ie7-js.googlecode.com/svn/test/before.html','archivo .js externo') + '.' %>
 
 
 <%= render 'partials/modules/mod_separata' %>
@@ -57,12 +57,12 @@ date: 9 June 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Styling HTML5 Elements: An Irresponsible Choice... Right now', 
   :link => 'http://nicolasgallagher.com/better-float-containment-in-ie/',
-  :text => 'Si aplicamos estilo a elementos propios de HTML5, es imprescindible que el usuario tenga javascript activado en IE6,7,8  para poder visualizarlo. Si no es así, el HTML se renderizará totalmente plano y sin estilo. FAIL!' + link('How many users have javascript disabled?', 'http://developer.yahoo.com/blogs/ydn/posts/2010/10/how-many-users-have-javascript-disabled/') + '.' %>
+  :text => 'Si aplicamos estilo a elementos propios de HTML5, es imprescindible que el usuario tenga javascript activado en IE6,7,8  para poder visualizarlo. Si no es así, el HTML se renderizará totalmente plano y sin estilo. FAIL!' + link('http://developer.yahoo.com/blogs/ydn/posts/2010/10/how-many-users-have-javascript-disabled/', 'How many users have javascript disabled?') + '.' %>
   
 <%= render 'partials/modules/mod_article_text', 
   :title => 'What Potential Impact Can HTML5 Have on SEO?', 
   :link => 'http://sixrevisions.com/content-strategy/what-potential-impact-can-html5-have-on-seo/',
-  :text => 'Como sabéis, HTML5 incorporá una variedad de etiquetas nuevas que ayudan a dar semantíca al contenido. Aquí nos cuentan el impacto que tienen en SEO.' %>
+  :text => 'Como sabéis, HTML5 incorpora una variedad de etiquetas nuevas que ayudan a dar semántica al contenido. Aquí nos cuentan el impacto que tienen en SEO.' %>
   
 <%= render 'partials/modules/mod_article_text', 
   :title => 'An aside really isn’t a sidebar', 
@@ -95,12 +95,8 @@ date: 9 June 2011
 
 <%= render 'partials/modules/mod_separata' %>
 
-
-
-
 <%= render 'partials/modules/mod_title', 
   :title => 'VISUAL PLAYGROUND' %>
-
 
 <%#= render 'partials/modules/mod_text', 
   :text => 'Vi vi vi... Vi-su-al!',
@@ -108,7 +104,7 @@ date: 9 June 2011
   
 <%= render 'partials/modules/mod_article_image_medium',
   :image => 'lab.jpg',
-  :text => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. <br /><br />' +
+  :text => 'Galerías de experimentos, una muestra de lo que podemos conseguir. Utiliza Chrome para verlos en todo su explendor.<br /><br />' +
            link('http://matthewlein.com/experiments/', false, true) + 
            link('http://playground.deaxon.com/', false, true) + 
            link('http://css3watch.com/', false, true) + 
