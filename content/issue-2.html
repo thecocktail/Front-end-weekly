@@ -1,0 +1,145 @@
+--- 
+issue: 2
+date: 5 July 2011
+---
+
+
+<%= render 'partials/modules/mod_text', :text =>'Bienvenidos a la primera entrega de Front-end Weekly. Una newsletter de carácter semanal, nacida con la intención de haceros partícipes a todos de esta pequeña profesión.' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'MOST DISCUSSED' %>
+
+<%= render 'partials/modules/mod_article_image_medium', 
+  :image => 'responsive.jpg',
+  :title => 'Take Responsive Design Beyond the (Fluid) Grid', 
+  :link => 'http://www.webmonkey.com/2011/06/good-responsive-design-goes-beyond-fluid-grids/', 
+  :text => 'Cuando hablamos de Responsive Design, el tamaño de la pantalla es solo el punto de partida. Hay que tener en cuenta, interfaces táctiles, features del dispositivo (geoposicionamiento), transiciones...  Cada sitio es diferente y hay que darle al usuario lo que quiere en cada momento.' %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'CSS' %>
+  
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'CSS drop-shadows without images', 
+  :link => 'http://nicolasgallagher.com/css-drop-shadows-without-images/', 
+  :text => 'Aplicar diferentes tipos de sombras a los elementos sin utilizar imágenes, solo con la magia del CSS.' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Custom File Inputs with a Bit of jQuery (CSS)', 
+  :link => 'http://www.viget.com/inspire/custom-file-inputs-with-a-bit-of-jquery/', 
+  :text => 'Personalizar los input "file" para que les podamos cambiar el diseño y que se vea correctamente en todos los navegadores, ya que por defecto cada uno le aplica sus propios estilos.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'CSS2.1 User Agent Style Sheet Default', 
+  :link => 'http://css-class.com/test/css/defaults/UA-style-sheet-defaults.htm', 
+  :text => '--' %>
+  
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Optimize your links for print using CSS', 
+  :link => 'http://css.dzone.com/news/optimize-your-links-print-usin', 
+  :text => '--' %>
+  
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Internet Explorer CSS Bugs', 
+  :link => 'http://haslayout.net/css/',
+  :text => 'Recopilación de problemas de incompatibilidad entre propiedades de CSS e Internet Explorer. Explican por qué ocurre y cómo solucionarlo.' %>
+  
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', :title => 'HTML5' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'HTML5’s New “form” Attribute', 
+  :link => 'http://www.impressivewebs.com/html5-form-attribute/',
+  :text => '--' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Defense in Depth: Locking Down Mash-Ups with HTML5 Sandbox', 
+  :link => 'http://blogs.msdn.com/b/ie/archive/2011/07/14/defense-in-depth-locking-down-mash-ups-with-html5-sandbox.aspx',
+  :text => '--' %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'JS' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'selfDoc.js: Javascript that documents itself', 
+  :link => 'https://github.com/rudenoise/selfDoc.js',
+  :text => '--' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Apple Javascript Coding Guidelines', 
+  :link => 'http://developer.apple.com/library/mac/documentation/ScriptingAutomation/Conceptual/JSCodingGuide/JSCodingGuide.pdf',
+  :text => '--' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+    :title => 'Using AMD loaders to write and manage modular javascript', 
+    :link => 'http://unscriptable.com/code/Using-AMD-loaders/#0',
+    :text => '' %>
+
+<%= render 'partials/modules/mod_article_text', 
+    :title => 'On using h1 for all heading levels in HTML5', 
+    :link => 'http://www.456bereastreet.com/archive/201106/on_using_h1_for_all_heading_levels_in_html5/',
+    :text => '' %>
+
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'DEVELOPMENT TOOLS & RESOURCES' %>
+  
+<%= render 'partials/modules/mod_text',
+  :text => '<strong>MAILING</strong> <br />' +
+           link('http://getfractal.com/', 'Fractal', true) + 
+           link('http://beaker.mailchimp.com/inline-css', 'The Automatic CSS Inliner Tool', true) + 
+           link('http://inlinestyler.torchboxapps.com/', 'Inline Styler', true) + 
+           link('http://htmlemailboilerplate.com/','HTML Email Boilerplate v0.4',true) +
+           link('http://www.campaignmonitor.com/blog/post/3107/css3-support-in-email-clients/','Which Email clients support CSS3',true) +
+           link('http://htmlemailboilerplate.com/','HTML Email Boilerplate v0.4',true) +
+           link('http://www.campaignmonitor.com/css/', 'Guide to CSS Support in email', true),
+  :padding => '10px 20px 30px'
+%>
+
+<%= render 'partials/modules/mod_text',
+  :text => '<strong>CSS ANIMATION</strong> <br />' +
+           link('http://www.automatoon.com/', 'Automatoon (online)', true) +
+           link('http://matthewlein.com/ceaser/', 'Ceaser', true) + 
+           link('http://www.sencha.com/products/animator/', 'Sencha Animator', true) + 
+           link('http://tumultco.com/hype/', 'Hype', true) + 
+           link('http://animatable.com/','Animatable (soon)', true) +
+           link('http://labs.adobe.com/technologies/edge/','Adobe Edge (soon)', true),
+  :padding => '10px 20px 30px'
+%>
+
+
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'INTERESTING' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Channel 4, Web Style Guide', 
+  :link => 'http://halmatferello.com/lab/channel4/styleguide/',
+  :text => 'La guia de estilo web de Channel 4. ' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'HTML5 Video Player Comparison', 
+  :link => 'http://praegnanz.de/html5video/',
+  :text => 'Comparativa Reproductores de video opensource en HTML5.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Google Chart Tools / Image Charts (aka Chart API)', 
+  :link => 'http://code.google.com/intl/es-ES/apis/chart/image/docs/gallery/chart_gall.html',
+  :text => 'API para generar gráficas estáticas. En '+ link('http://redes-sociales.the-cocktail.com')  +' podéis ver un ejemplo de las “Pie charts”.' %>
+  
+<%= render 'partials/modules/mod_separata' %>
+
+
+
