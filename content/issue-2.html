@@ -1,6 +1,6 @@
 --- 
 issue: 2
-date: 5 July 2011
+date: 15 July 2011
 ---
 
 
@@ -94,7 +94,8 @@ date: 5 July 2011
 <%= render 'partials/modules/mod_title', 
   :title => 'DEVELOPMENT TOOLS & RESOURCES' %>
   
-<%= render 'partials/modules/mod_text',
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'mailing.jpg',
   :text => '<strong>MAILING</strong> <br />' +
            link('http://getfractal.com/', 'Fractal', true) + 
            link('http://beaker.mailchimp.com/inline-css', 'The Automatic CSS Inliner Tool', true) + 
@@ -102,19 +103,20 @@ date: 5 July 2011
            link('http://htmlemailboilerplate.com/','HTML Email Boilerplate v0.4',true) +
            link('http://www.campaignmonitor.com/blog/post/3107/css3-support-in-email-clients/','Which Email clients support CSS3',true) +
            link('http://htmlemailboilerplate.com/','HTML Email Boilerplate v0.4',true) +
-           link('http://www.campaignmonitor.com/css/', 'Guide to CSS Support in email', true),
-  :padding => '10px 20px 30px'
+           link('http://www.campaignmonitor.com/css/', 'Guide to CSS Support in email', true)
 %>
 
-<%= render 'partials/modules/mod_text',
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'animation.jpg',
   :text => '<strong>CSS ANIMATION</strong> <br />' +
            link('http://www.automatoon.com/', 'Automatoon (online)', true) +
            link('http://matthewlein.com/ceaser/', 'Ceaser', true) + 
            link('http://www.sencha.com/products/animator/', 'Sencha Animator', true) + 
            link('http://tumultco.com/hype/', 'Hype', true) + 
            link('http://animatable.com/','Animatable (soon)', true) +
-           link('http://labs.adobe.com/technologies/edge/','Adobe Edge (soon)', true),
-  :padding => '10px 20px 30px'
+           link('http://labs.adobe.com/technologies/edge/','Adobe Edge (soon)', true)
 %>
 
 
