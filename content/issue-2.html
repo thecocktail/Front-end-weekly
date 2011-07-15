@@ -21,13 +21,13 @@ date: 15 July 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'CSS2.1 User Agent Style Sheet Default', 
   :link => 'http://css-class.com/test/css/defaults/UA-style-sheet-defaults.htm', 
-  :text => '--' %>
+  :text => 'Un repaso por todas las etiquetas de HTML y los estilos por defecto que les aplica cada navegador.' %>
   
   
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Optimize your links for print using CSS', 
   :link => 'http://css.dzone.com/news/optimize-your-links-print-usin', 
-  :text => '--' %>
+  :text => 'Un tip interesante para hacer que los enlaces muestren la URL en la vista de impresión.' %>
   
 
 <%= render 'partials/modules/mod_article_text', 
@@ -35,7 +35,6 @@ date: 15 July 2011
   :link => 'http://haslayout.net/css/',
   :text => 'Recopilación de problemas de incompatibilidad entre propiedades de CSS e Internet Explorer. Explican por qué ocurre y cómo solucionarlo.' %>
   
-
 <%= render 'partials/modules/mod_separata' %>
 
 <%= render 'partials/modules/mod_title', :title => 'HTML5' %>
@@ -43,12 +42,17 @@ date: 15 July 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'HTML5’s New “form” Attribute', 
   :link => 'http://www.impressivewebs.com/html5-form-attribute/',
-  :text => '--' %>
+  :text => 'El atributo "form" de HTML5 permite asociar elementos de formulario a un &lt;form&gt; aunque se encuentren fuera de este. ' %>
   
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Defense in Depth: Locking Down Mash-Ups with HTML5 Sandbox', 
   :link => 'http://blogs.msdn.com/b/ie/archive/2011/07/14/defense-in-depth-locking-down-mash-ups-with-html5-sandbox.aspx',
-  :text => '--' %>
+  :text => 'HTML5 Sandbox permite limitar ciertos privilegios de los iframes como ejecutar scripts, abrir popups, llamadas ajax...' %>
+
+<%= render 'partials/modules/mod_article_text', 
+    :title => 'On using h1 for all heading levels in HTML5', 
+    :link => 'http://www.456bereastreet.com/archive/201106/on_using_h1_for_all_heading_levels_in_html5/',
+    :text => 'HTML5 outline algorithm o sobre usar h1s para todos los niveles de navegación en HTML5.' %>
 
 <%= render 'partials/modules/mod_separata' %>
 
@@ -58,22 +62,16 @@ date: 15 July 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'selfDoc.js: Javascript that documents itself', 
   :link => 'https://github.com/rudenoise/selfDoc.js',
-  :text => '--' %>
+  :text => 'Una función de js que nos ayuda a crear documentación para nuestros proyectos Javascript.' %>
   
-<%= render 'partials/modules/mod_article_text', 
+<%= render 'partials/modules/mod_article_link', 
   :title => 'Apple Javascript Coding Guidelines', 
-  :link => 'http://developer.apple.com/library/mac/documentation/ScriptingAutomation/Conceptual/JSCodingGuide/JSCodingGuide.pdf',
-  :text => '--' %>
+  :link => 'http://developer.apple.com/library/mac/documentation/ScriptingAutomation/Conceptual/JSCodingGuide/JSCodingGuide.pdf' %>
   
 <%= render 'partials/modules/mod_article_text', 
     :title => 'Using AMD loaders to write and manage modular javascript', 
     :link => 'http://unscriptable.com/code/Using-AMD-loaders/#0',
-    :text => '' %>
-
-<%= render 'partials/modules/mod_article_text', 
-    :title => 'On using h1 for all heading levels in HTML5', 
-    :link => 'http://www.456bereastreet.com/archive/201106/on_using_h1_for_all_heading_levels_in_html5/',
-    :text => '' %>
+    :text => 'Interesantes slides sobre Asynchronous Module Definition. Desarrollo de Javascript Modular, cargado asíncronamente y siguiendo los patrones de interoperabilidad de CommonJS.' %>
 
 
 <%= render 'partials/modules/mod_separata' %>
