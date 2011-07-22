@@ -21,36 +21,63 @@ date: 22 July 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Pure CSS GUI Icons', 
   :link => 'http://nicolasgallagher.com/pure-css-gui-icons/', 
-  :text => 'Texto.' %>
-  
+  :text => 'Iconos hechos completamente con CSS. Otro ejercicio de experimentación de Nicolas Gallagher.' %>
   
 <%= render 'partials/modules/mod_article_text', 
-  :title => 'The top 10 open source web fonts', 
-  :link => 'http://www.netmagazine.com/features/top-10-open-source-web-fonts', 
-  :text => 'Un tip interesante para hacer que los enlaces muestren la URL en la vista de impresión.' %>
-    
+  :title => 'CSS1k', 
+  :link => 'http://css1k.com', 
+  :text => 'Similar a CSS Zen Garden pero llevado a un concurso donde las hojas de estilo están limitadas a 1K.' %>
 
+<%=render 'partials/modules/mod_article_text', 
+	:link => 'http://www.webputty.net/', 
+	:title => 'WebPutty',
+	:text => 'Herramienta de edición de CSS online con soporte para SCSS y Compass. Muy fácil de incluir en cualquier site para gestionar las CSS.' %>
 
-	<%= render 'partials/modules/mod_title', 
-	  :title => 'JS' %>
+<%= render 'partials/modules/mod_separata' %>
 
-	<%= render 'partials/modules/mod_article_text', 
-	  :title => 'Sugar: A simple Javascript library for working with native objects', 
-	  :link => 'http://sugarjs.com/',
-	  :text => 'TEXTO' %>
+<%= render 'partials/modules/mod_title', 
+  :title => 'JS' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Sugar: A simple Javascript library for working with native objects', 
+  :link => 'http://sugarjs.com/',
+  :text => 'Una libreria para la manipulación de objetos nativos de Javascript. Una interesante alternativa a '  + 
+   link('http://documentcloud.github.com/underscore/', 'Underscore.js', true) %>
+  
+<%= render 'partials/modules/mod_article_link', 
+  :title => 'DropKick.js Painless custom dropdowns, a jQuery joint', 
+  :link => 'http://jamielottering.github.com/DropKick/' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'jQuery EasyUI Framework', 
+  :link => 'http://jeasyui.com/',
+  :text => '' %>
+
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'slideshow.jpg',
+  :text => '<strong>Slideshows:</strong> <br />' +
+           link('http://hakim.se/experiments/css/slideshow/#/', 'CSS 3D Slideshow', true) +
+           link('http://hakim.se/experiments/css3-3d-slideshow', 'Enlace a la documentación', true) + 
+           link('http://leaverou.me/csss/sample-slideshow.html', 'CSS-Based Slideshow System', true) + 
+           link('https://github.com/LeaVerou/CSSS', 'Mobilizer: Enlace a la documentación', true)
+%>
+
 	
+<%= render 'partials/modules/mod_separata' %>
 
-	<%= render 'partials/modules/mod_text',
-	  :text => '<strong>JS PLUGINS</strong> <br />' +
-	           link('http://jamielottering.github.com/DropKick/', true) +
-	           link('http://leaverou.me/csss/sample-slideshow.html', true) +
-	 					 link('https://github.com/LeaVerou/CSSS', true) + 	
-	           link('http://hakim.se/experiments/css/slideshow/#/',true)+
-						 link('http://hakim.se/experiments/css3-3d-slideshow',true),
-	  :padding => '10px 20px 30px'
-	%>
+<%= render 'partials/modules/mod_title', 
+  :title => '	MOBILE' %>
 
-	<%= render 'partials/modules/mod_separata' %>
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'ipad.jpg',
+  :text => '<strong>Mobile development tools:</strong> <br />' +
+           link('http://ipadpeek.com/', 'iPad Peek', true) +
+           link('http://www.phono.com/', 'Phono: jQuery Phone plugin', true) + 
+           link('http://www.socketbug.com/', 'Socketbug: Mobile web application debugging', true) + 
+           link('http://www.springbox.com/mobilizer/', 'Mobilizer: Mobile tool for mobile development', true)
+%>
+  
+<%= render 'partials/modules/mod_separata' %>
 
 <%= render 'partials/modules/mod_title', 
   :title => 'INTERESTING' %>
@@ -58,48 +85,10 @@ date: 22 July 2011
 <%= render 'partials/modules/mod_article_text', 
   :title => 'Rapid Prototyping with flickrBomb', 
   :link => 'http://www.zurb.com/playground/rapid-prototyping-with-flickrbomb',
-  :text => 'texto' %>
+  :text => 'Deja de usar placeholders sosos e inclúyelos utilizando imágenes de Flickr.' %>
   
-<%= render 'partials/modules/mod_article_text', 
+<%= render 'partials/modules/mod_article_link', 
   :title => 'Infinite Mario in HTML5', 
-  :link => 'http://mario.fromlifetodeath.com/',
-  :text => 'TEXTO' %>
-  
+  :link => 'http://mario.fromlifetodeath.com/' %>
+
 <%= render 'partials/modules/mod_separata' %>
-
-<%= render 'partials/modules/mod_title', 
-  :title => '	TOOLS' %>
-  
-<%=render 'partials/modules/mod_article_link', 
-	:link => 'http://www.webputty.net/', 
-	:title => 'WebPutty' %>
-
-  
-<%= render 'partials/modules/mod_separata' %>
-
-
-
-<%= render 'partials/modules/mod_title', 
-  :title => '	MOBILE' %>
-
-<%=render 'partials/modules/mod_article_link', 
-	:link => 'http://ipadpeek.com/', 
-	:title => 'iPad Peek' %>
-  
-<%=render 'partials/modules/mod_article_link', 
-	:link => 'http://www.phono.com/', 
-	:title => 'Phono: jQuery Phone plugin' %>
-	
-<%=render 'partials/modules/mod_article_link', 
-	:link => 'http://www.socketbug.com/', 
-	:title => 'Socketbug: Mobile web application debugging' %>
-		
-<%=render 'partials/modules/mod_article_link', 
-	:link => 'http://www.springbox.com/mobilizer/', 
-	:title => 'Mobilizer: Mobile tool for mobile development' %>
-
-  
-<%= render 'partials/modules/mod_separata' %>
-
-
-
