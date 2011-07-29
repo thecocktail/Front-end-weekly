@@ -1,0 +1,93 @@
+--- 
+issue: 4
+date: 29 July 2011
+---
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'CSS' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'CSS3 Radial Gradients', 
+  :link => 'http://blog.typekit.com/2011/07/19/shading-with-css-text-shadows/', 
+  :text => 'Explicación sobre como crear degradados circulares con CSS3.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => '6 Methods For Vertical Centering With CSS', 
+  :link => 'http://www.vanseodesign.com/css/vertical-centering/', 
+  :text => 'Como conseguir centrar elementos verticalmente con CSS, sin que esto sea un dolor de cabeza.' %>
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'CSS3 Bling in the Real World', 
+  :link => 'http://www.alistapart.com/articles/css3-bling-in-the-real-world', 
+  :text => 'Recopiláción de algunas técnicas de CSS3, y como adaptarlas a los distintos navegadores.' %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'VISUAL PLAYGROUND' %>
+
+<%#= render 'partials/modules/mod_text', 
+  :text => 'Vi vi vi... Vi-su-al!',
+  :padding => '10px 20px 0' %>
+  
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'patterns.jpg',
+  :text => 'Si quieres buscar inspiración y ver las cosas que se pueden llegar a hacer, aquí tienes unos cuantos recursos. Algunos necesitan Chrome o Safari para verlos en todo su esplendor.<br /><br />' +
+           link('http://leaverou.me/css3patterns/', 'CSS3 Patterns Gallery', true) + 
+           link('http://www.paulrhayes.com/category/experiments/', 'Experiments by Paul Hayes', true) + 
+           link('http://ie7nomore.com/', 'IE7 no more, just another CSS playground', true) + 
+           link('http://www.allisnotlo.st/', 'Videoclip HTML5', true),
+  :padding => '10px 20px 30px'
+%>
+
+<%= render 'partials/modules/mod_separata' %>
+
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'JS' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Skinning the YouTube Player with HTML5 Video Support', 
+  :link => 'http://www.benbarnett.net/2010/11/24/skinning-the-youtube-player-with-html5-video-support/',
+  :text => 'Script para “limpiar” el player de Youtube en HTML5, que es multidispositivo, y poder aplicarle los estilos que queramos. ' %>
+
+  <%=render 'partials/modules/mod_article_link', 
+	  :link => 'http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/', 
+	  :title => 'Responsive Images: Experimenting with Context-Aware Image Sizing' %>
+	
+		<%=render 'partials/modules/mod_article_link', 
+		  :link => 'http://jibbering.com/faq/notes/closures/', 
+		  :title => 'Javascript Closures' %>
+		
+			<%=render 'partials/modules/mod_article_link', 
+			  :link => 'http://bonsaiden.github.com/JavaScript-Garden/', 
+			  :title => 'Javascript Garden, collection of documentation about JS.' %>
+			
+				<%=render 'partials/modules/mod_article_link', 
+				  :link => 'http://handlebars.strobeapp.com/', 
+				  :title => 'Handlebars, to build semantic templates.' %>
+			
+	
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'INTERESTING' %>
+
+<%#= render 'partials/modules/mod_text', 
+  :text => 'Vi vi vi... Vi-su-al!',
+  :padding => '10px 20px 0' %>
+  
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'gplus.jpg',
+  :text => 'Ahora  que google + se encuentra entre nosotros. Os dejamos una recopilación con las técnicas utilizadas para su realización..<br /><br />' +
+           link('http://youhack.me/2011/07/15/google-plus-photo-stack-animation-using-jquery-and-css3/', 'Photo stack animation using jQuery and CSS3', true) + 
+           link('http://youhack.me/2011/07/12/google-plus-click-animation-effect-on-stream-page/', 'Click animation effect on Stream Page using jQuery', true) + 
+           link('http://www.9lessons.info/2011/07/google-plus-style-animations-with.html', 'Google Plus Style Animations with jQuery and CSS3', true),
+  :padding => '10px 20px 30px'
+%>
+
+<%= render 'partials/modules/mod_separata' %>
+
+
