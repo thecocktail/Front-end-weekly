@@ -1,0 +1,61 @@
+--- 
+issue: 6
+date: 12 August 2011
+---
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'CSS' %>
+
+<%= render 'partials/modules/mod_article_image_medium',
+  :image => 'css_shapes.jpg',
+  :text => '<br />' + link('http://www.css-101.org/articles/ken-burns_effect/css-transition.php', 'How to create a Ken Burns effect with CSS', true) +
+           link('http://www.css3files.com/', 'CSS3 properties explained', true) + 
+           link('http://css-tricks.com/examples/ShapesOfCSS/', 'The Shapes of CSS', true) + 
+           link('http://www.netmagazine.com/tutorials/create-fluid-width-videos', 'Create fluid width videos', true) %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'JS' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Fixing the JavaScript typeof operator', 
+  :link => 'http://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/', 
+  :text => 'Explicación del uso del operador typeof y algunas alternativas más fiables.' %>
+
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'The Node Beginner Book', 
+  :link => 'http://nodebeginner.org/index.html', 
+  :text => 'Libro de introducción a Node.js, un framework de javascript que nos permite utilizar este lenguaje del lado del servidor.' %>
+
+<%= render 'partials/modules/mod_article_link', 
+  :title => 'Backbone.js Tips : Lessons from the trenches', 
+  :link => 'http://devblog.supportbee.com/2011/07/29/backbone-js-tips-lessons-from-the-trenches/' %>
+  
+<%= render 'partials/modules/mod_article_link', 
+  :title => 'Building Mobile JavaScript WebApps With Backbone.js & jQuery: Part I', 
+  :link => 'http://msdn.microsoft.com/en-us/scriptjunkie/hh377172.aspx' %>  
+  
+<%= render 'partials/modules/mod_article_text', 
+  :title => 'Sprite3D.js', 
+  :link => 'http://minimal.be/lab/Sprite3D/', 
+  :text => 'Librería para desplazar elementos en un espacio de 3D usando CSS transforms.' %>
+
+<%= render 'partials/modules/mod_article_link', 
+  :title => 'Black and white image jQuery plugin', 
+  :link => 'http://www.gianlucaguarini.com/canvas-experiments/jQuery.BlackAndWhite/demo.html' %>
+
+<%= render 'partials/modules/mod_separata' %>
+
+<%= render 'partials/modules/mod_title', 
+  :title => 'ANIMATION' %>
+
+<%= render 'partials/modules/mod_article_image_medium', 
+  :image => 'radi_app.jpg',
+  :title => 'Radi App', 
+  :link => 'http://radiapp.com/', 
+  :text => 'Una aplicación para Mac, capaz de realizar animaciones, gráficos vectoriales, vídeos...., siendo  compatible con nuestros navegadores más modernos.' %>
+  
+<%= render 'partials/modules/mod_separata' %>
